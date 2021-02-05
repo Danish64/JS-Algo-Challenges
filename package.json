@@ -1,0 +1,22 @@
+{
+  "name": "100-algorithms-js",
+  "version": "1.0.0",
+  "description": "\"# JS-Algo-Challenges\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Danish64/JS-Algo-Challenges.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Danish64/JS-Algo-Challenges/issues"
+  },
+  "homepage": "https://github.com/Danish64/JS-Algo-Challenges#readme",
+  "dependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
