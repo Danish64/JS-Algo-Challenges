@@ -1,15 +1,13 @@
 export function centuryFromYear(year: number): number {
-  let century: number = 1;
+  let century: number = year / 100;
 
-  if (Math.floor(year % 100) === 0) {
-    century = Math.floor(year / 100);
-  } else {
-    century = Math.floor(year / 100) + 1;
+  if (year % 100 === 0) {
+    return century;
   }
 
-  return century;
+  return Math.floor(century) + 1;
 }
 
 console.log(centuryFromYear(1905));
 console.log(centuryFromYear(1700));
-console.log(centuryFromYear(1995));
+// console.log(centuryFromYear(1995));
