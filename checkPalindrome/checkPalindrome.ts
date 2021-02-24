@@ -1,14 +1,8 @@
 export function checkPalindrome(inputString: string): boolean {
-  let isPalindrome = false;
-
-  if (
+  return (
     inputString.toLowerCase().split("").reverse().join("") ===
     inputString.toLowerCase()
-  ) {
-    isPalindrome = true;
-  }
-
-  return isPalindrome;
+  );
 }
 
 console.log(checkPalindrome("a"));
