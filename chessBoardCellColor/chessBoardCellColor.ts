@@ -13,13 +13,7 @@ export function chessBoardCellColor(cell1: string, cell2: string): boolean {
   const cell1Sum = Board[cell1[0]] + parseInt(cell1[1]);
   const cell2Sum = Board[cell2[0]] + parseInt(cell2[1]);
 
-  if (cell1Sum % 2 === 0 && cell2Sum % 2 === 0) {
-    return true;
-  } else if (cell1Sum % 2 !== 0 && cell2Sum % 2 !== 0) {
-    return true;
-  }
-
-  return false;
+  return cell1Sum % 2 === cell2Sum % 2 ;
 }
 
 console.log(chessBoardCellColor("A1", "C3"));
